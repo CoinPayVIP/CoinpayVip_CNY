@@ -12,7 +12,8 @@ $parameter = array(
 	"body"	=> '描述',
 	"noUrl"	=> "http://你的域名/demo/noUrl.php",//回调地址
 	"reUrl"	=> "http://你的域名/demo/",//支付成功跳转地址（不会传递任何参数，一般为订单详情url）
-	"payType"	=> 'CNY-alipaymq'//请在http://www.coinpay.vip/supported-coins.php中搜索（全称即为payType）
+	"payType"	=> 'CNY-alipaymq',//请在http://www.coinpay.vip/supported-coins.php中搜索（全称即为payType）
+	"Userid"	=> ''//你网站用户的id，具有唯一性，有助于提高回调成功率（由95.3%提升到99%）
 );
 ksort($parameter);//按照第一个字符的键值 ASCII 码递增排序（字母升序排序），如果遇到相同字符则按照第二个字符的键值 ASCII 码递增排序，以此类推。
 reset($parameter);
